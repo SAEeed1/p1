@@ -31,6 +31,10 @@ services:
       - NODE_ENV=production
       - PORT=3000
       - MONGODB_URI=mongodb://mongo:27017/istandwithiran
+      - FRONTEND_URL=https://istandwithiran.org
+      - JWT_SECRET=${JWT_SECRET:-your-super-secret-jwt-key-change-this-in-production}
+      - ADMIN_USERNAME=${ADMIN_USERNAME:-admin}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-SecurePassword123!}
     depends_on:
       mongo:
         condition: service_healthy

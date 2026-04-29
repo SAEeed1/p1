@@ -10,11 +10,21 @@
   <meta name="description" content="A global movement in solidarity with the Iranian people against external aggression and for justice, dignity, and self-determination.">
   <meta name="keywords" content="Iran, solidarity, justice, peace, human rights, campaign">
   
-  <!-- Open Graph / Social Media -->
+  <!-- Open Graph / Social Media - Multi-language -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="I Stand With Iran">
-  <meta property="og:description" content="Join the global movement in solidarity with Iran.">
+  <meta property="og:title" content="I Stand With Iran | من مع إيران | Me Solidarizo con Irán | Je Soutiens l'Iran | 我与伊朗站在一起">
+  <meta property="og:description" content="Join the global movement in solidarity with Iran against aggression and for justice.">
   <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ar_SA">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="zh_CN">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="I Stand With Iran">
+  <meta name="twitter:description" content="Join the global movement in solidarity with Iran.">
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕊️</text></svg>">
@@ -236,32 +246,11 @@
       // Initialize language switcher
       window.langSwitcher = new LanguageSwitcher(translations, 'en');
       
-      // Initialize support counter with simulated base count
+      // Initialize support counter - fetches real data from API
       window.supportCounter = new SupportCounter(0);
-      window.supportCounter.simulateSupporters(12847); // Simulated existing supporters
       
-      // Initialize signup form
-      window.signupForm = new SignupForm(function(data, formElement) {
-        // Custom submit handler
-        console.log('New supporter:', data);
-        
-        // Save to localStorage
-        const submissions = JSON.parse(localStorage.getItem('iwwi_submissions') || '[]');
-        submissions.push(data);
-        localStorage.setItem('iwwi_submissions', JSON.stringify(submissions));
-        
-        // Increment counter
-        window.supportCounter.addSupporter();
-        
-        // Show success state
-        window.signupForm.showSuccess(formElement);
-        
-        // Reset form after delay
-        setTimeout(() => {
-          formElement.reset();
-          window.signupForm.hideSuccess(formElement);
-        }, 3000);
-      });
+      // Initialize signup form - sends data to backend API
+      window.signupForm = new SignupForm();
       
       // Listen for supporter added events
       window.addEventListener('supporterAdded', function(e) {
