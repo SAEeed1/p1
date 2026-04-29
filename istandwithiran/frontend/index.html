@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title data-i18n-title="hero_headline">I Stand With Iran</title>
+  <meta name="description" content="A global movement in solidarity with the Iranian people against external aggression and for justice, dignity, and self-determination.">
+  <meta name="keywords" content="Iran, solidarity, justice, peace, human rights, campaign">
+  
+  <!-- Open Graph / Social Media - Multi-language -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="I Stand With Iran | من مع إيران | Me Solidarizo con Irán | Je Soutiens l'Iran | 我与伊朗站在一起">
+  <meta property="og:description" content="Join the global movement in solidarity with Iran against aggression and for justice.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ar_SA">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="zh_CN">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="I Stand With Iran">
+  <meta name="twitter:description" content="Join the global movement in solidarity with Iran.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕊️</text></svg>">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Language Switcher -->
+  <nav id="lang-switcher" class="lang-switcher" role="navigation" aria-label="Language selection">
+    <!-- Buttons rendered by JavaScript -->
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="hero-headline" data-i18n="hero_headline">I Stand With Iran</h1>
+      <p class="hero-mission" data-i18n="hero_mission">
+        A global movement in solidarity with the Iranian people against external aggression and for justice, dignity, and self-determination.
+      </p>
+      <button class="hero-cta" onclick="document.getElementById('counter-section').scrollIntoView({behavior: 'smooth'})" data-i18n="hero_cta">
+        Declare Your Support
+      </button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container about-content">
+      <h2 class="about-title" data-i18n="about_title">About the Campaign</h2>
+      <p class="about-text" data-i18n="about_content">
+        This campaign unites voices worldwide in support of Iran's sovereignty and the rights of its people. We stand against military intervention, sanctions, and foreign interference. Join us in amplifying the call for peace, dialogue, and respect for international law.
+      </p>
+    </div>
+  </section>
+
+  <!-- Counter / Sign-up Section -->
+  <section class="counter-section" id="counter-section">
+    <div class="container counter-container">
+      <h2 class="counter-title" data-i18n="counter_title">Join the Movement</h2>
+      <p class="counter-label" data-i18n="counter_label">Supporters Worldwide</p>
+      
+      <div class="support-counter" id="support-counter">0</div>
+      
+      <form class="signup-form" id="signup-form" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="name" data-i18n="form_name">Your Name</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            class="form-input" 
+            placeholder="Enter your full name"
+            required
+            minlength="2"
+            autocomplete="name"
+          >
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="country" data-i18n="form_country">Your Country</label>
+          <input 
+            type="text" 
+            id="country" 
+            name="country" 
+            class="form-input" 
+            placeholder="Enter your country"
+            required
+            minlength="2"
+            autocomplete="country-name"
+          >
+        </div>
+        
+        <button type="submit" class="form-submit" data-i18n="form_submit">Sign the Declaration</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container footer-content">
+      <ul class="footer-links">
+        <li><a href="#about" class="footer-link" data-i18n="about_title">About the Campaign</a></li>
+        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+        <li><a href="#" class="footer-link">Contact</a></li>
+      </ul>
+      
+      <div class="footer-social">
+        <a href="#" class="social-icon" aria-label="Twitter">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="footer-meta">
+        <span class="footer-solidarity" data-i18n="footer_solidarity">In Solidarity</span>
+        <span class="footer-rights" data-i18n="footer_rights">All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Translations Data -->
+  <script id="translations-data" type="application/json">
+    {
+      "en": {
+        "lang_name": "English",
+        "hero_headline": "I Stand With Iran",
+        "hero_mission": "A global movement in solidarity with the Iranian people against external aggression and for justice, dignity, and self-determination.",
+        "hero_cta": "Declare Your Support",
+        "about_title": "About the Campaign",
+        "about_content": "This campaign unites voices worldwide in support of Iran's sovereignty and the rights of its people. We stand against military intervention, sanctions, and foreign interference. Join us in amplifying the call for peace, dialogue, and respect for international law.",
+        "counter_title": "Join the Movement",
+        "counter_label": "Supporters Worldwide",
+        "form_name": "Your Name",
+        "form_country": "Your Country",
+        "form_submit": "Sign the Declaration",
+        "form_submit_success": "Thank You!",
+        "footer_rights": "All rights reserved.",
+        "footer_solidarity": "In Solidarity"
+      },
+      "ar": {
+        "lang_name": "العربية",
+        "hero_headline": "أنا أقف مع إيران",
+        "hero_mission": "حركة عالمية للتضامن مع الشعب الإيراني ضد العدوان الخارجي ومن أجل العدالة والكرامة وتقرير المصير.",
+        "hero_cta": "أعلن دعمك",
+        "about_title": "عن الحملة",
+        "about_content": "توحد هذه الحملة الأصوات في جميع أنحاء العالم دعماً لسيادة إيران وحقوق شعبها. نقف ضد التدخل العسكري والعقوبات والتدخل الأجنبي. انضم إلينا في تضخيم الدعوة للسلام والحوار واحترام القانون الدولي.",
+        "counter_title": "انضم إلى الحركة",
+        "counter_label": "داعمون حول العالم",
+        "form_name": "اسمك",
+        "form_country": "بلدك",
+        "form_submit": "وقع الإعلان",
+        "form_submit_success": "شكراً لك!",
+        "footer_rights": "جميع الحقوق محفوظة.",
+        "footer_solidarity": "في التضامن"
+      },
+      "es": {
+        "lang_name": "Español",
+        "hero_headline": "Me Solidarizo con Irán",
+        "hero_mission": "Un movimiento global en solidaridad con el pueblo iraní contra la agresión externa y por la justicia, la dignidad y la autodeterminación.",
+        "hero_cta": "Declara Tu Apoyo",
+        "about_title": "Sobre la Campaña",
+        "about_content": "Esta campaña une voces en todo el mundo en apoyo a la soberanía de Irán y los derechos de su pueblo. Nos oponemos a la intervención militar, las sanciones y la interferencia extranjera. Únete a nosotros para amplificar el llamado a la paz, el diálogo y el respeto al derecho internacional.",
+        "counter_title": "Únete al Movimiento",
+        "counter_label": "Seguidores en Todo el Mundo",
+        "form_name": "Tu Nombre",
+        "form_country": "Tu País",
+        "form_submit": "Firma la Declaración",
+        "form_submit_success": "¡Gracias!",
+        "footer_rights": "Todos los derechos reservados.",
+        "footer_solidarity": "En Solidaridad"
+      },
+      "fr": {
+        "lang_name": "Français",
+        "hero_headline": "Je Soutiens l'Iran",
+        "hero_mission": "Un mouvement mondial de solidarité avec le peuple iranien contre l'agression extérieure et pour la justice, la dignité et l'autodétermination.",
+        "hero_cta": "Déclarez Votre Soutien",
+        "about_title": "À Propos de la Campagne",
+        "about_content": "Cette campagne unit des voix du monde entier en soutien à la souveraineté de l'Iran et aux droits de son peuple. Nous nous opposons à l'intervention militaire, aux sanctions et à l'ingérence étrangère. Rejoignez-nous pour amplifier l'appel à la paix, au dialogue et au respect du droit international.",
+        "counter_title": "Rejoignez le Mouvement",
+        "counter_label": "Supporters dans le Monde",
+        "form_name": "Votre Nom",
+        "form_country": "Votre Pays",
+        "form_submit": "Signer la Déclaration",
+        "form_submit_success": "Merci!",
+        "footer_rights": "Tous droits réservés.",
+        "footer_solidarity": "En Solidarité"
+      },
+      "zh": {
+        "lang_name": "中文",
+        "hero_headline": "我与伊朗站在一起",
+        "hero_mission": "一场与伊朗人民团结一致的全球运动，反对侵略，争取正义、尊严和自决权。",
+        "hero_cta": "声明您的支持",
+        "about_title": "关于运动",
+        "about_content": "这场运动凝聚了全球支持伊朗主权和人民权利的声音。我们反对军事干预、制裁和外国干涉。加入我们，共同呼吁和平、对话和尊重国际法。",
+        "counter_title": "加入运动",
+        "counter_label": "全球支持者",
+        "form_name": "您的姓名",
+        "form_country": "您的国家",
+        "form_submit": "签署宣言",
+        "form_submit_success": "谢谢您！",
+        "footer_rights": "版权所有。",
+        "footer_solidarity": "团结一致"
+      }
+    }
+  </script>
+
+  <!-- Components -->
+  <script src="components/lang-switcher.js"></script>
+  <script src="components/support-counter.js"></script>
+  <script src="components/signup-form.js"></script>
+
+  <!-- Main Application Script -->
+  <script>
+    // Initialize application when DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+      // Parse translations
+      const translationsData = document.getElementById('translations-data');
+      const translations = JSON.parse(translationsData.textContent);
+      
+      // Initialize language switcher
+      window.langSwitcher = new LanguageSwitcher(translations, 'en');
+      
+      // Initialize support counter - fetches real data from API
+      window.supportCounter = new SupportCounter(0);
+      
+      // Initialize signup form - sends data to backend API
+      window.signupForm = new SignupForm();
+      
+      // Listen for supporter added events
+      window.addEventListener('supporterAdded', function(e) {
+        console.log('Supporter added:', e.detail);
+      });
+      
+      // Listen for language change events
+      window.addEventListener('languageChanged', function(e) {
+        console.log('Language changed to:', e.detail.lang);
+      });
+      
+      // Log initialization
+      console.log('I Stand With Iran - Campaign Website Initialized');
+      console.log('Supported languages:', Object.keys(translations).join(', '));
+    });
+  </script>
+</body>
+</html>
