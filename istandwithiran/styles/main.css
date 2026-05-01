@@ -64,6 +64,11 @@ html {
 body {
   font-family: var(--font-body);
   background-color: var(--color-bg-primary);
+  background-image: url('../assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: var(--color-text-primary);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -167,6 +172,7 @@ a {
   position: relative;
   padding: var(--section-padding) 0;
   overflow: hidden;
+  background: rgba(10, 10, 10, 0.6);
 }
 
 .hero::before {
@@ -223,7 +229,7 @@ a {
 /* ====== About Section ====== */
 .about {
   padding: var(--section-padding) 0;
-  background: var(--color-bg-secondary);
+  background: rgba(20, 20, 20, 0.85);
   border-top: 1px solid var(--color-border-subtle);
   border-bottom: 1px solid var(--color-border-subtle);
 }
@@ -248,7 +254,7 @@ a {
 /* ====== Counter / Sign-up Section ====== */
 .counter-section {
   padding: var(--section-padding) 0;
-  background: var(--color-bg-primary);
+  background: rgba(10, 10, 10, 0.8);
 }
 
 .counter-container {
@@ -347,7 +353,7 @@ a {
 /* ====== Footer ====== */
 .footer {
   padding: var(--spacing-lg) 0;
-  background: var(--color-bg-secondary);
+  background: rgba(20, 20, 20, 0.9);
   border-top: 1px solid var(--color-border-subtle);
 }
 
